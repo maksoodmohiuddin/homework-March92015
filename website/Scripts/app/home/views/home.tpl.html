@@ -1,0 +1,22 @@
+﻿<div class="row">
+    <div class="page-header col-md-12">
+        <div>
+            <span class="tab-open glyphicon glyphicon-chevron-left"></span>
+            <img src="Content/Images/image1.png" />
+            <span class="tab-open glyphicon glyphicon-chevron-right"></span>
+            <h5>
+                <span class="label label-success">View Profile</span>
+            </h5>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">              
+                <!-- This is a hack to load the directives, angualar is not loading directly from ng-repeat, not sure why-->
+               <ambassador-tile ng-show="false"></ambassador-tile> 
+
+              <ambassador-tile ng-repeat="ambassador in ambassadors" ambassador="ambassador" ng-click="open()"></ambassador-tile>               
+            </div>
+        </div>
+    </div>
+</div>

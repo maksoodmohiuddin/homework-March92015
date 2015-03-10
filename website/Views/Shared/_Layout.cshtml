@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="website">
+<head>
+    <meta charset="utf-8" />    
+    <title> Maksood Mohiuddin | XBox Team Homework </title>
+    @Styles.Render("~/Content/css")
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_Navigation.cshtml")
+
+    <div class="container body-content">
+        <div ui-view="main" ng-cloak></div>
+        @RenderBody()       
+    </div>
+    
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/bootstrap")
+
+
+    @Scripts.Render("~/bundles/scripts/app")
+</body>
+</html>
